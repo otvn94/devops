@@ -1,0 +1,14 @@
+name: PHP CD Pipeline
+
+on:
+  push:
+    branches:
+      - principal
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Simulação de deploy
+        run: echo "Deploy realizado com sucesso"
